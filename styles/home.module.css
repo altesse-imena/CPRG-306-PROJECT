@@ -1,3 +1,4 @@
+/* styles/Home.module.css */
 .container {
   display: flex;
   flex-direction: column;
@@ -50,7 +51,7 @@
 }
 
 .section {
-  padding: 120px 20px; /* Increased padding for more space around each section */
+  padding: 216px 20px; /* Reduced padding for more space around each section by 40% */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto; /* Centering the section */
@@ -61,20 +62,18 @@
   display: inline-block;
   width: 200px;
   height: 200px;
-  margin: 20px; /* Added margin for spacing */
 }
 
 .profileImage {
   border-radius: 50%;
   position: relative;
   z-index: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Smooth transitions */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 .profileImageContainer:hover .profileImage {
-  box-shadow: 0 0 30px rgba(0, 0, 255, 0.7); /* More intense blue shadow */
-  transform: scale(1.15); /* Larger scale on hover */
-  border: 5px solid rgba(0, 0, 255, 0.7); /* Added glowing border */
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* Blue shadow pop-out effect */
+  transform: scale(1.05); /* Slightly larger on hover */
 }
 
 .profileImageBorder {
@@ -158,10 +157,24 @@
   margin-bottom: 20px;
 }
 
-.skillItem {
+.skillButton {
+  display: inline-block;
+  text-decoration: none;
+  color: #007aff; /* Apple blue color for text */
+  font-weight: bold;
+  background-color: #f0f0f0; /* Background color of the button */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 122, 255, 0.3); /* Apple blue shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for effects */
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10px; /* Space between icon and text */
+}
+
+.skillButton:hover {
+  transform: scale(1.05); /* Slightly larger on hover */
+  box-shadow: 0 6px 8px rgba(0, 122, 255, 0.5); /* Darker Apple blue shadow on hover */
 }
 
 .skillLogo {
@@ -169,10 +182,7 @@
   height: 30px;
 }
 
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* Responsive navbar for smaller screens */
 @media (max-width: 600px) {

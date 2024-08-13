@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -69,22 +69,23 @@ const Home = () => {
         </p>
       </div>
       <div id="skills" className={`${styles.section} ${styles.skillsSection}`}>
+        <h2>Skills</h2> {/* Added header for Skills section */}
         <div className={styles.skillsCategory}>
           <h3>Programming Languages</h3>
           <ul className={styles.skillsList}>
-            <li>
+            <li className={styles.skillButton}>
               <Image src="/images/js.png" alt="JavaScript" className={styles.skillsLogo} width={24} height={24} />
               JavaScript
             </li>
-            <li>
+            <li className={styles.skillButton}>
               <Image src="/images/ts.png" alt="TypeScript" className={styles.skillsLogo} width={24} height={24} />
               TypeScript
             </li>
-            <li>
+            <li className={styles.skillButton}>
               <Image src="/images/python.png" alt="Python" className={styles.skillsLogo} width={24} height={24} />
               Python
             </li>
-            <li>
+            <li className={styles.skillButton}>
               <Image src="/images/csharp.svg" alt="C#" className={styles.skillsLogo} width={24} height={24} />
               C#
             </li>
@@ -93,11 +94,11 @@ const Home = () => {
         <div className={styles.skillsCategory}>
           <h3>Markup & Styling</h3>
           <ul className={styles.skillsList}>
-            <li>
+            <li className={styles.skillButton}>
               <Image src="/images/css.svg" alt="CSS" className={styles.skillsLogo} width={24} height={24} />
               CSS
             </li>
-            <li>
+            <li className={styles.skillButton}>
               <Image src="/images/html.svg" alt="HTML" className={styles.skillsLogo} width={24} height={24} />
               HTML
             </li>
@@ -106,9 +107,13 @@ const Home = () => {
         <div className={styles.skillsCategory}>
           <h3>Libraries</h3>
           <ul className={styles.skillsList}>
-            <li>
+            <li className={styles.skillButton}>
               <Image src="/images/react.svg" alt="React" className={styles.skillsLogo} width={24} height={24} />
               React.js
+            </li>
+            <li className={styles.skillButton}>
+              <Image src="/images/angular.png" alt="Angular" className={styles.skillsLogo} width={24} height={24} />
+              Angular
             </li>
           </ul>
         </div>
