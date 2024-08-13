@@ -77,7 +77,7 @@ const Home = () => {
               JavaScript
             </li>
             <li>
-              <Image src="/images/typescript-logo.png" alt="TypeScript" className={styles.skillsLogo} width={24} height={24} />
+              <Image src="/images/ts.png" alt="TypeScript" className={styles.skillsLogo} width={24} height={24} />
               TypeScript
             </li>
             <li>
