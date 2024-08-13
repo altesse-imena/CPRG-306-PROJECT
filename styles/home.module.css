@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0; /* Light gray background */
+  background-color: #f0f0f0;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   padding: 0 20px;
@@ -16,12 +16,12 @@
 
 .navbar {
   width: 100%;
-  background-color: rgba(51, 51, 51, 0.8); /* Transparent dark background for the navbar */
+  background-color: rgba(51, 51, 51, 0.8);
   padding: 10px 0;
-  position: fixed; /* Fixed position to stay at the top */
+  position: fixed;
   top: 0;
   z-index: 1000;
-  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+  transition: background-color 0.3s ease;
 }
 
 .navMenu {
@@ -34,7 +34,7 @@
 }
 
 .navItem a {
-  color: white; 
+  color: white;
   text-decoration: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
@@ -42,15 +42,15 @@
 }
 
 .navItem a:hover {
-  background-color: rgba(87, 87, 87, 0.8); /* Slightly transparent hover effect */
+  background-color: rgba(87, 87, 87, 0.8);
 }
 
 .navItem a.active {
-  background-color: rgba(0, 122, 255, 0.8); /* Active state with transparent Apple blue color */
+  background-color: rgba(0, 122, 255, 0.8);
 }
 
 .section {
-  padding: 80px 20px; /* Adjusted padding to account for fixed navbar */
+  padding: 120px 20px; /* Increased padding for more space between sections */
   width: 100%;
   max-width: 1200px;
 }
@@ -63,15 +63,15 @@
 }
 
 .profileImage {
-  border-radius: 50%; 
+  border-radius: 50%;
   position: relative;
   z-index: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profileImageContainer:hover .profileImage {
-  box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* Blue shadow pop-out effect */
-  transform: scale(1.05); /* Slightly larger on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+  transform: scale(1.05);
 }
 
 .profileImageBorder {
@@ -82,10 +82,10 @@
   height: 100%;
   border-radius: 50%;
   border: 5px solid transparent;
-  border-top-color: #007aff; 
+  border-top-color: #007aff;
   animation: rotate 2s linear infinite;
   box-sizing: border-box;
-  z-index: 0; 
+  z-index: 0;
 }
 
 @keyframes rotate {
@@ -105,14 +105,14 @@
 
 .title {
   font-size: 1.5rem;
-  color: #666; /* Light gray color for subtitle */
+  color: #666;
   margin-bottom: 20px;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Space between image/button pairs */
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -120,41 +120,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7.5px; /* Reduced spacing between image and button */
+  gap: 7.5px;
 }
 
 .button {
   display: inline-block;
   text-decoration: none;
-  color: #007aff; /* Apple blue color for text */
+  color: #007aff;
   font-weight: bold;
   margin-top: 5px;
-  background-color: #f0f0f0; /* Background color of the button */
-  padding: 10px 20px; /* Padding around the text */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 122, 255, 0.3); /* Apple blue shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for effects */
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 122, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .button:hover {
-  transform: scale(1.05); /* Slightly larger on hover */
-  box-shadow: 0 6px 8px rgba(0, 122, 255, 0.5); /* Darker Apple blue shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 122, 255, 0.5);
 }
 
 .skillsList {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0; /* Increased margin for more space */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
 }
 
-.skillsList li {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.skillsCategory {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skillLogo {
+  width: 30px;
+  height: 30px;
 }
 
 /* Smooth scrolling for anchor links */

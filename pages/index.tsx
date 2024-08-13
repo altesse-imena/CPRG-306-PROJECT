@@ -1,4 +1,3 @@
-// pages/index.tsx
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
@@ -69,14 +68,50 @@ const Home = () => {
           My name is Altesse Imena, and I am an aspiring software engineer with a diverse cultural background, having grown up in multiple countries. This experience has instilled in me a deep appreciation for different cultures and an openness to interacting with people from various backgrounds. I am bilingual, fluent in both English and French, which enhances my ability to communicate effectively in diverse environments. I am always eager to expand my professional network and explore new opportunities. Feel free to connect with me to discuss potential collaborations and opportunities.
         </p>
       </div>
-      <div id="skills" className={styles.section}>
-        <h2>Skills</h2>
-        <ul className={styles.skillsList}>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
-          <li>Skill 4</li>
-        </ul>
+      <div id="skills" className={`${styles.section} ${styles.skillsSection}`}>
+        <div className={styles.skillsCategory}>
+          <h3>Programming Languages</h3>
+          <ul className={styles.skillsList}>
+            <li>
+              <Image src="/images/javascript-logo.png" alt="JavaScript" className={styles.skillsLogo} width={24} height={24} />
+              JavaScript
+            </li>
+            <li>
+              <Image src="/images/typescript-logo.png" alt="TypeScript" className={styles.skillsLogo} width={24} height={24} />
+              TypeScript
+            </li>
+            <li>
+              <Image src="/images/python-logo.png" alt="Python" className={styles.skillsLogo} width={24} height={24} />
+              Python
+            </li>
+            <li>
+              <Image src="/images/csharp-logo.png" alt="C#" className={styles.skillsLogo} width={24} height={24} />
+              C#
+            </li>
+          </ul>
+        </div>
+        <div className={styles.skillsCategory}>
+          <h3>Markup & Styling</h3>
+          <ul className={styles.skillsList}>
+            <li>
+              <Image src="/images/css-logo.png" alt="CSS" className={styles.skillsLogo} width={24} height={24} />
+              CSS
+            </li>
+            <li>
+              <Image src="/images/html-logo.png" alt="HTML" className={styles.skillsLogo} width={24} height={24} />
+              HTML
+            </li>
+          </ul>
+        </div>
+        <div className={styles.skillsCategory}>
+          <h3>Libraries</h3>
+          <ul className={styles.skillsList}>
+            <li>
+              <Image src="/images/react-logo.png" alt="React" className={styles.skillsLogo} width={24} height={24} />
+              React.js
+            </li>
+          </ul>
+        </div>
       </div>
       <div id="contact" className={styles.section}>
         <h2>Contact Me</h2>
