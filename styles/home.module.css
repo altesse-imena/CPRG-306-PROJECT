@@ -1,25 +1,25 @@
-/* General Container */
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  background-color: #f4f4f9; /* Light background color for better contrast */
+  background-color: #f4f4f9; 
   text-align: center;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   padding: 0 20px;
 }
 
-/* Header and Navbar */
+
 .header {
   width: 100%;
 }
 
 .navbar {
   width: 100%;
-  background-color: rgba(31, 31, 31, 0.9); /* Slightly darker background for better visibility */
-  padding: 15px 0; /* Increased padding for better touch target */
+  background-color: rgba(31, 31, 31, 0.9); 
+  padding: 15px 0; 
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -51,15 +51,15 @@
   background-color: rgba(0, 122, 255, 0.9);
 }
 
-/* Section Styling */
+
 .section {
-  padding: 120px 20px; /* Reduced padding for a tighter layout */
+  padding: 120px 20px; 
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Profile Image and Border */
+
 .profileImageContainer {
   position: relative;
   display: inline-block;
@@ -102,20 +102,20 @@
   }
 }
 
-/* Text Styling */
+
 .name {
-  font-size: 2.5rem; /* Larger font size for prominence */
+  font-size: 2.5rem; 
   margin: 20px 0;
   font-weight: bold;
 }
 
 .title {
-  font-size: 1.8rem; /* Larger subtitle for better visibility */
+  font-size: 1.8rem; 
   color: #666;
   margin-bottom: 25px;
 }
 
-/* Button Styling */
+
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -148,7 +148,7 @@
   box-shadow: 0 6px 10px rgba(0, 122, 255, 0.5);
 }
 
-/* Skills Section */
+
 .skillsList {
   list-style-type: none;
   padding: 0;
@@ -220,7 +220,7 @@
   height: 28px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
   .navMenu {
     flex-direction: column;
