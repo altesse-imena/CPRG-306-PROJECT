@@ -73,7 +73,7 @@ const Home = () => {
           <h3>Programming Languages</h3>
           <ul className={styles.skillsList}>
             <li>
-              <Image src="/images/javascript-logo.png" alt="JavaScript" className={styles.skillsLogo} width={24} height={24} />
+              <Image src="/images/js.png" alt="JavaScript" className={styles.skillsLogo} width={24} height={24} />
               JavaScript
             </li>
             <li>
@@ -81,7 +81,7 @@ const Home = () => {
               TypeScript
             </li>
             <li>
-              <Image src="/images/python-logo.png" alt="Python" className={styles.skillsLogo} width={24} height={24} />
+              <Image src="/images/python.png" alt="Python" className={styles.skillsLogo} width={24} height={24} />
               Python
             </li>
             <li>
