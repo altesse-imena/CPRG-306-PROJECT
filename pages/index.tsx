@@ -69,7 +69,7 @@ const Home: React.FC = () => {
         </p>
       </div>
       <div id="skills" className={`${styles.section} ${styles.skillsSection}`}>
-        <h2>Skills</h2> {/* Added header for Skills section */}
+        <h2>Skills</h2> 
         <div className={styles.skillsCategory}>
           <h3>Programming Languages</h3>
           <ul className={styles.skillsList}>
@@ -119,9 +119,67 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div id="contact" className={styles.section}>
-        <h2>Contact Me</h2>
-        <p>Provide your contact information here.</p>
-      </div>
+  <h2>Contact Me</h2>
+  <div className={styles.contactButtonContainer}>
+    <a
+      href="mailto:imenaaltesse@gmail.com"
+      className={styles.contactButton}
+    >
+      <Image
+        src="/images/gmail.png" 
+        alt="Gmail"
+        className={styles.contactIcon}
+        width={24}
+        height={24}
+      />
+      Gmail
+    </a>
+    <a
+      href="https://twitter.com/AltesseCFC" 
+      className={styles.contactButton}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src="/images/twitter.png" 
+        alt="Twitter"
+        className={styles.contactIcon}
+        width={24}
+        height={24}
+      />
+      Twitter
+    </a>
+    <a
+      href="https://instagram.com/altesse.imena" 
+      className={styles.contactButton}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Image
+        src="/images/instagram.png" 
+        alt="Instagram"
+        className={styles.contactIcon}
+        width={24}
+        height={24}
+      />
+      Instagram
+    </a>
+    <a
+      href="tel:+17807073219" 
+      className={styles.contactButton}
+    >
+      <Image
+        src="/images/phone.jpg" 
+        alt="Phone"
+        className={styles.contactIcon}
+        width={24}
+        height={24}
+      />
+      Phone
+    </a>
+  </div>
+</div>
+
     </div>
   )
 }
