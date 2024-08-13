@@ -16,12 +16,12 @@
 
 .navbar {
   width: 100%;
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: rgba(51, 51, 51, 0.8); /* Transparent dark background for the navbar */
   padding: 10px 0;
-  position: fixed;
+  position: fixed; /* Fixed position to stay at the top */
   top: 0;
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
 }
 
 .navMenu {
@@ -34,7 +34,7 @@
 }
 
 .navItem a {
-  color: white;
+  color: white; 
   text-decoration: none;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
@@ -42,17 +42,18 @@
 }
 
 .navItem a:hover {
-  background-color: rgba(87, 87, 87, 0.8);
+  background-color: rgba(87, 87, 87, 0.8); /* Slightly transparent hover effect */
 }
 
 .navItem a.active {
-  background-color: rgba(0, 122, 255, 0.8);
+  background-color: rgba(0, 122, 255, 0.8); /* Active state with transparent Apple blue color */
 }
 
 .section {
-  padding: 120px 20px; /* Increased padding for more space between sections */
+  padding: 120px 20px; /* Increased padding for more space around each section */
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto; /* Centering the section */
 }
 
 .profileImageContainer {
@@ -66,12 +67,12 @@
   border-radius: 50%;
   position: relative;
   z-index: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 .profileImageContainer:hover .profileImage {
-  box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
-  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* Blue shadow pop-out effect */
+  transform: scale(1.05); /* Slightly larger on hover */
 }
 
 .profileImageBorder {
@@ -105,14 +106,14 @@
 
 .title {
   font-size: 1.5rem;
-  color: #666;
+  color: #666; /* Light gray color for subtitle */
   margin-bottom: 20px;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; /* Space between image/button pairs */
   margin-top: 20px;
 }
 
@@ -120,25 +121,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7.5px;
+  gap: 7.5px; /* Reduced spacing between image and button */
 }
 
 .button {
   display: inline-block;
   text-decoration: none;
-  color: #007aff;
+  color: #007aff; /* Apple blue color for text */
   font-weight: bold;
   margin-top: 5px;
-  background-color: #f0f0f0;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 122, 255, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #f0f0f0; /* Background color of the button */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 122, 255, 0.3); /* Apple blue shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for effects */
 }
 
 .button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 8px rgba(0, 122, 255, 0.5);
+  transform: scale(1.05); /* Slightly larger on hover */
+  box-shadow: 0 6px 8px rgba(0, 122, 255, 0.5); /* Darker Apple blue shadow on hover */
 }
 
 .skillsList {
@@ -147,7 +148,7 @@
   margin: 20px 0; /* Increased margin for more space */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 20px; /* Increased gap between skill items */
 }
 
 .skillsCategory {

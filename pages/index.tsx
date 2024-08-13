@@ -85,7 +85,7 @@ const Home = () => {
               Python
             </li>
             <li>
-              <Image src="/images/csharp-logo.png" alt="C#" className={styles.skillsLogo} width={24} height={24} />
+              <Image src="/images/csharp.svg" alt="C#" className={styles.skillsLogo} width={24} height={24} />
               C#
             </li>
           </ul>
@@ -94,11 +94,11 @@ const Home = () => {
           <h3>Markup & Styling</h3>
           <ul className={styles.skillsList}>
             <li>
-              <Image src="/images/css-logo.png" alt="CSS" className={styles.skillsLogo} width={24} height={24} />
+              <Image src="/images/css.svg" alt="CSS" className={styles.skillsLogo} width={24} height={24} />
               CSS
             </li>
             <li>
-              <Image src="/images/html-logo.png" alt="HTML" className={styles.skillsLogo} width={24} height={24} />
+              <Image src="/images/html.svg" alt="HTML" className={styles.skillsLogo} width={24} height={24} />
               HTML
             </li>
           </ul>
@@ -107,7 +107,7 @@ const Home = () => {
           <h3>Libraries</h3>
           <ul className={styles.skillsList}>
             <li>
-              <Image src="/images/react-logo.png" alt="React" className={styles.skillsLogo} width={24} height={24} />
+              <Image src="/images/react.svg" alt="React" className={styles.skillsLogo} width={24} height={24} />
               React.js
             </li>
           </ul>
